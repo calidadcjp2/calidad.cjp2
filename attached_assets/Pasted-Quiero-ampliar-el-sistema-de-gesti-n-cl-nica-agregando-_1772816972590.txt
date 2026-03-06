@@ -1,0 +1,112 @@
+Quiero ampliar el sistema de gestión clínica agregando tres módulos avanzados para calidad y control de infecciones (IAAS).
+
+1. Investigación IAAS automática (árbol causa-raíz)
+
+Cuando un caso IAAS esté marcado como "Confirmado", el sistema debe abrir automáticamente un formulario de investigación con análisis causa-raíz.
+
+Debe incluir:
+
+Datos del caso
+- paciente
+- servicio
+- fecha detección
+- tipo de infección
+- dispositivo asociado
+
+Análisis causa-raíz tipo árbol:
+
+1. Factores del paciente
+- comorbilidades
+- inmunosupresión
+- otros
+
+2. Factores del procedimiento
+- cumplimiento de protocolo
+- técnica utilizada
+- uso de checklists
+
+3. Factores del equipo de salud
+- adherencia a higiene de manos
+- uso de EPP
+- capacitación
+
+4. Factores del entorno
+- limpieza
+- disponibilidad de insumos
+- carga asistencial
+
+El sistema debe generar automáticamente:
+- causa probable
+- plan de acción sugerido
+
+
+2. Registro de Eventos Adversos tipo MINSAL
+
+Crear un módulo nuevo llamado:
+
+"Eventos Adversos"
+
+Formulario basado en notificación tipo MINSAL:
+
+Datos del evento
+- fecha
+- servicio
+- tipo de evento (caída, error medicación, procedimiento, diagnóstico, otro)
+- descripción
+
+Clasificación
+
+- evento adverso
+- incidente
+- cuasi evento
+
+Gravedad
+
+- sin daño
+- leve
+- moderado
+- grave
+- muerte
+
+Factores contribuyentes
+- humano
+- sistema
+- comunicación
+- equipamiento
+
+Estado del caso
+- pendiente
+- en análisis
+- cerrado
+
+Debe poder vincularse con:
+Planes de Acción.
+
+
+3. Indicadores automáticos del sistema
+
+Crear un módulo llamado:
+
+"Indicadores Automáticos"
+
+Los indicadores deben calcularse automáticamente desde los datos registrados en el sistema.
+
+Indicadores sugeridos:
+
+IAAS
+- tasa IAAS mensual
+- IAAS por servicio
+- IAAS por dispositivo
+
+Seguridad del paciente
+- tasa eventos adversos
+- eventos por servicio
+- gravedad de eventos
+
+Gestión
+- reclamos por mes
+- cumplimiento de planes de acción
+
+Mostrar resultados en:
+
+Dashboard con tarjetas y gráficos automáticos.
